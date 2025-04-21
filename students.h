@@ -17,30 +17,20 @@ public:
 		alive = 1;
 	}
 	//constructer with argument
-	Student(string nm) {
-		//cout << "construction with argument " << endl;
-		name = nm;
-		age = 13;
-		mark = 4;
-		alive = true;
-
+	Student(string nm)  :Student(nm,13,4,true) {
 	}
 	//canonical construction
-	Student(string nm,int a,double m,bool al) {
+	Student(string name,int age,double mark,bool alive) {
 		//cout << "construction with argument " << endl;
-		name = nm;
-		age =a;
-		mark = m;
-		alive = al;
+		this->name = name;
+		this->age =age;
+		this->mark = mark;
+		this->alive = alive;
 
 	}
 	//construction copy
-	Student(const Student& st) {
+	Student(const Student& st) : Student(st.name,st.age,st.mark,st.alive) {
 		//cout << "construction with argument " << endl;
-		name = st.name;
-		age = st.age;
-		mark = st.mark;
-		alive = st.alive;
 
 	}
 
