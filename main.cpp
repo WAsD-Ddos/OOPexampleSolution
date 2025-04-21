@@ -5,11 +5,14 @@
 
 
 int main() {
-	Student st1("Sasha",15,5.8,true);
-	Student st2(st1);
+	Student st1("saf",19,5,true);
 
-	cout << st1.toString() << endl;
-	cout << st2.toString() << endl;
+
+	for (int i = 0; i < st1.countMark; i++)
+	{
+		cout << st1.getMark(i) << " ";
+	}
+
 
 	return 0;
 }
