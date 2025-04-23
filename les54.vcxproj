@@ -142,6 +142,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="initializer.h" />
     <ClInclude Include="maint.h" />
     <ClInclude Include="students.h" />
     <ClInclude Include="Teacher.h" />

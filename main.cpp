@@ -1,18 +1,20 @@
-#include "Teacher.h"
 
-
+#include "initializer.h"
 
 
 
 int main() {
-	Student st1("saf",19,5,true);
+	int count;
+	cout << "input number of students: " << endl;
+	cin >> count;
+	Student* stlist = nullptr;
 
+	Initializer initializer;
+	initializer.init(stlist, count);
 
-	for (int i = 0; i < st1.countMark; i++)
+	for ( int i = 0; i < count ; i++)
 	{
-		cout << st1.getMark(i) << " ";
+		cout << stlist[i].toString() << endl;
 	}
-
-
 	return 0;
-}
+} 

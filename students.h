@@ -1,5 +1,6 @@
 #include "maint.h"
 
+
 class Student {
 
 public:
@@ -10,13 +11,7 @@ public:
 	bool alive;
 
 	//default constructer 
-	Student() {
-		//cout << "Default-construction " << endl;
-		name = "no name";
-		age = 13;
-		marks = nullptr;
-		countMark = 0;
-		alive = 1;
+	Student() :Student("no name",13,10,true){
 	}
 	//constructer with argument
 	Student(string nm)  :Student(nm,13,0,true) {
@@ -80,6 +75,7 @@ public:
 			marks[index] = mark;
 		}
 	}
+
 
 };
 
