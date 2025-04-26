@@ -2,13 +2,33 @@
 
 
 class Student {
-
-public:
+private:
 	string name;
 	int age;
-	int* marks;
 	int countMark;
-	bool alive;
+	int* marks;
+    bool alive;
+public:
+	string getName() {return name;}
+	void setName(string name) {this->name = name;}
+
+	int getAge() {return age;}
+	void setAge(int age) {
+		if (age < 13 && age >18) {this->age = age;}
+	}
+	
+	int getCountMarks() {return countMark;}
+
+
+	int* getsMarks() {return marks;}
+	
+	bool isAlive() {return alive;}
+	void setAlive(bool alive) { this->alive = alive; }
+	
+
+	
+
+	
 
 	//default constructer 
 	Student() :Student("no name",13,10,true){

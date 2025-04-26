@@ -7,6 +7,7 @@ int main() {
 	int count;
 	cout << "input number of students: " << endl;
 	cin >> count;
+	
 	Student* stlist = nullptr;
 
 	Initializer initializer;
