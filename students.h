@@ -11,7 +11,7 @@ private:
 	string getAllMarks();
 
 public:
-	Student() :Student("no name", 13, 10, true) {}
+	Student() : Student("no name", 13, 10, true) {}
 	Student(string nm) :Student(nm, 13, 0, true) {}
 	Student(string name, int age, int countMark, bool alive);
 	Student(const Student& st) : Student(st.name, st.age, st.countMark, st.alive) {}

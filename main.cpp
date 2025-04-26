@@ -8,7 +8,7 @@ int main() {
 	int count;
 	cout << "input number of students: " << endl;
 	cin >> count;
-	
+
 
 	Student* stlist = nullptr;
 
@@ -16,7 +16,7 @@ int main() {
 	Manager manager;
 	initializer.init(stlist, count);
 	cout << "full list of students" << endl;
-	for ( int i = 0; i < count ; i++)
+	for (int i = 0; i < count; i++)
 	{
 		cout << stlist[i].toString() << endl;
 	}
@@ -26,9 +26,9 @@ int main() {
 	cout << "list of students best" << endl;
 	for (int i = 0; i < size; i++)
 	{
-		cout <<bestlist[i].toString() << endl;
+		cout << bestlist[i].toString() << endl;
 	}
-
+	
 	Student* worstlist = manager.getWorstStudets(stlist, count, &size);
 	cout << "list of students worst" << endl;
 	for (int i = 0; i < size; i++)
@@ -36,8 +36,8 @@ int main() {
 		cout << worstlist[i].toString() << endl;
 	}
 
-	delete[] stlist;
-	delete[] bestlist;
-	delete[]worstlist;
+	//delete[] stlist;
+	//delete[] bestlist;
+	//delete[]worstlist;
 	return 0;
-} 
+}
