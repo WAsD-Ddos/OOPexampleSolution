@@ -33,11 +33,6 @@
 	void Student::setAlive(bool alive) { this->alive = alive; }
 
 
-
-
-
-
-
 	//canonical construction
 	Student::Student(string name, int age, int countMark, bool alive) {
 		//cout << "construction with argument " << endl;
@@ -84,6 +79,16 @@
 		if (index >= 0 && index < countMark && marks) {
 			marks[index] = mark;
 		}
+	}
+
+
+	double Student::getAvarageMark() {
+		double sum = 0;
+		for (int i = 0; i < countMark; i++)
+		{
+			sum += marks[i];
+		}
+		return sum / countMark;
 	}
 
 
