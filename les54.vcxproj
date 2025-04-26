@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="initializer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="students.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="initializer.h" />
