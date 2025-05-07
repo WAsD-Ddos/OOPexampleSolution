@@ -36,8 +36,8 @@ int main() {
 		cout << worstlist[i].toString() << endl;
 	}
 
-	//delete[] stlist;
-	//delete[] bestlist;
-	//delete[]worstlist;
+	delete[] stlist;
+	delete[] bestlist;
+	delete[]worstlist;
 	return 0;
 }

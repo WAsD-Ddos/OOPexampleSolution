@@ -1,4 +1,4 @@
-#include "students.h"
+#include "Group.h"
 
 class Initializer {
 public:
