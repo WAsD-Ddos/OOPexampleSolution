@@ -144,14 +144,12 @@ void ArrayList::clear()
 }
 string ArrayList::toString()
 {
-    string s="";
-    s += "[";
+    string s="[ ";
     for (int i = 0; i < size; i++) {
         if (i != 0) { s += ", "; }
         s += array[i];
     }
-    s += "]";
-    return s;
+    return s += "]";
 }
 
 int ArrayList::getLength() {
