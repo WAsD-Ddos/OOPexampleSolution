@@ -5,6 +5,7 @@ private:
     int* array;
     int size;
 public:
+
     ArrayList();
     ~ArrayList();
 

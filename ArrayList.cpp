@@ -11,7 +11,9 @@ ArrayList::~ArrayList()
 		delete[] array;
 	}
 }
-
+bool ArrayList::isEmpty() {
+    return getLength() == 0;
+}
 
 void ArrayList::add(int value)
 {
@@ -144,17 +146,17 @@ void ArrayList::clear()
 }
 string ArrayList::toString()
 {
-    string s="[ ";
+    if (isEmpty()) {
+        return "List is empty";
+    }
+    string s="[";
     for (int i = 0; i < size; i++) {
         if (i != 0) { s += ", "; }
-        s += array[i];
+        s += to_string(array[i]);
     }
     return s += "]";
 }
 
 int ArrayList::getLength() {
     return size;
-}
-bool ArrayList::isEmpty() {
-    return getLength() == 0;
 }
